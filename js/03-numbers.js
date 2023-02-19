@@ -384,3 +384,125 @@ const cars = [
 //     .sort((a, b) => a.price - b.price)
 //     .map(cars => cars.make);
 // console.table(getSortedCarsOnSale(cars));
+
+
+
+
+// lesson з ментором
+
+//#1
+// Напишіть дві функції
+// letMeSeeYourName(callback) - запитує ім"я користувача через prompt та викликає callback функцію
+// greet(name) - колбек, що приймає ім"я та виводить у консоль рядок "Привіт < name > "
+// Потрібно реалізувати перевірку, що prompt не порожній
+
+// #2
+// // Потрібно виконати рефакторинг коду так, щоб не потрібно було кожного разу передавати ім"я шефа
+// // Напишіть функцію makeShef(shefName), яка повертає функцію makeDish(dish),
+// //     яка пам"ятає ім"я шефа під час свого виклику
+// const makeDish = function (shefName, dish) {
+//   console.log(`${shefName} is cooking ${dish}`)
+// }
+
+// makeDish('Mango', 'apple pie')
+// makeDish('Poly', 'muffins')
+
+// #3
+// Потрібно виправити помилки, щоб код працював
+// const product = {
+//   price: 5000,
+//   showPrice() {
+//     console.log(this.price)
+//   },
+// }
+
+// product.showPrice()
+
+// #4
+// Потрібно виправити помилки, щоб код працював
+// const product = {
+//   price: 5000,
+//   showPrice() {
+//     console.log(this.price)
+//   },
+// }
+
+// function callAction(action) {
+//   action()
+// }
+// callAction(product.showPrice.bind(product))
+
+// #5
+// Напишіть функцію each(array, callback), яка першим параметром приймає масив,
+//     а другим - функцію, яка буде застосована до кожного елемента масиву.
+//     Функція each повинна повернути новий масив, елементами якого будуть результати виклику callback
+// callback повинна помножувати елементи на 2
+// const arrayNumber = [3, 5, 6, 34, 8, 83, 12, 34]
+
+// function each(array, callback) {
+//   const newArray =[];
+//   for(const element of array) {
+//     newArray.push(callback(element))
+//   }
+//   return newArray
+// }
+
+// const mult = (element) => element*2;
+
+// console.log(each(arrayNumber, mult));
+
+// варіант б
+// function each(array, callback) {
+ 
+  
+//   return callback(array)
+// }
+
+// const mult = (newArray) => newArray.map( element =>   element*2);
+
+// console.log(each(arrayNumber, mult));
+
+
+// const makeChangeColor = function () {
+  //   const changeColor = function (color) {
+  //     // this.color = color
+  //     console.log('changecolor -> this', this)
+  //   }
+  
+  //   //   changeColor()
+  //   const sweat = {
+  //     color: 'teal',
+  //   }
+  
+  //   sweat.uptadeColor = changeColor
+  //   sweat.uptadeColor('red')
+  
+  //   return sweat.uptadeColor
+  // }
+  // makeChangeColor()
+  
+  // 1. git clone - копіює репозиторій(папку з файлами) на компютер
+  //  2. git branch "branchName" - створює гілку з назвою "branchName"
+  //  3. git checkout "branchName" - переходить на гілку з назвою "branchName"
+  //  4. git checkout -b "branchName" - створюємо гілку з назвою "branchName" і переходимо на неї
+  //  5. git add . - зберігаємо зміни в файлах
+  //  6. git commit -m "commit message" - підписуємо збереженні зміни в файлах
+  //  7. git push - відправляємо зміни на сайт github
+  //  8. git pull - отримуємо останні зміни з сайту github
+  //  9. git status - показуємо статус проекту
+  //  10. git branch - показуємо список гілок в проекті
+  //  11. git branch -r - показуємо список гілок на сайті github
+  //  12. git branch -a - показуємо список гілок на компютері та на сайті github
+  //  13. git fetch - отримуємо зміни з сайту github
+  //  14. git stash - зберігаємо не збережені зміни в файлах і кладемо їх в буфер обміну
+  //  15. git stash apply - вставляємо збережені зміни з буфера обміну
+  // 16. git merge "banchName" - зливаємо гілку з назвою "branchName" в поточну гілку
+  //  17. git merge --abort - відміняємо зливання гілок
+  //  18. git branch -d branchName - видаляє гілку локально з проекту
+  //  19. git push origin --delete name - видаляє гілку з сайту github
+  //  20. git diff - показує відрізки рядків між двома версіями файлу (між двома комітами)
+  //  21. git log - показує історію комітів
+  //  22. cd gitTutorial - переходимо в папку gitTutorial
+  // Для того щоб вийти з режиму перегляду комітів використовуйте клавішу q (стосується команди №20 і №21)
+  
+  // https://www.youtube.com/watch?v=wFY5HVuQBgw
